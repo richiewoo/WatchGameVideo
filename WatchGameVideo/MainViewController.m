@@ -62,8 +62,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    VPViewController *vc = [[VPViewController alloc] init];
     VideoItem *item = [self.watchItems getWatchListData][indexPath.row];
+    VPViewController *vc = [[VPViewController alloc] initWithContentURL:[NSURL URLWithString:item.videoUrl]];
     vc.videoUrl = item.videoUrl;
     vc.videoTitle = item.title;
     [self.navigationController pushViewController:vc animated:YES];

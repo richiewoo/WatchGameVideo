@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MPMoviePlayerViewController.h>
 
-@interface VPViewController : UIViewController
+@interface VPViewController : MPMoviePlayerViewController
 
 @property (nonatomic, copy) NSString *videoUrl;
 @property (nonatomic, copy) NSString *videoTitle;

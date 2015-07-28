@@ -18,6 +18,7 @@
 		6B51C9D71B54AD0600A29EB2 /* WatchVideoListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51C9D61B54AD0600A29EB2 /* WatchVideoListDataSource.m */; };
 		6B51C9DA1B54AE3200A29EB2 /* WatchCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51C9D91B54AE3200A29EB2 /* WatchCellTableViewCell.m */; };
 		6B51C9E31B54E2AA00A29EB2 /* VPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B51C9E21B54E2AA00A29EB2 /* VPViewController.m */; };
+		6BFFA24B1B681007002A1FE8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BFFA24A1B681007002A1FE8 /* MediaPlayer.framework */; };
 		F4EAEF137D7293EC37D2F57E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2FB68DE6C0091E4868DAA77 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		6B51C9D91B54AE3200A29EB2 /* WatchCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchCellTableViewCell.m; sourceTree = "<group>"; };
 		6B51C9E11B54E2AA00A29EB2 /* VPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPViewController.h; sourceTree = "<group>"; };
 		6B51C9E21B54E2AA00A29EB2 /* VPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPViewController.m; sourceTree = "<group>"; };
+		6BFFA24A1B681007002A1FE8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A2FB68DE6C0091E4868DAA77 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE31622A10DCBFCCE15B999 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BFFA24B1B681007002A1FE8 /* MediaPlayer.framework in Frameworks */,
 				F4EAEF137D7293EC37D2F57E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		596567FC6D6819FF31AF3FFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6BFFA24A1B681007002A1FE8 /* MediaPlayer.framework */,
 				A2FB68DE6C0091E4868DAA77 /* libPods.a */,
 			);
 			name = Frameworks;
