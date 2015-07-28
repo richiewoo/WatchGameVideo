@@ -66,6 +66,7 @@
     VPViewController *vc = [[VPViewController alloc] initWithContentURL:[NSURL URLWithString:item.videoUrl]];
     vc.videoUrl = item.videoUrl;
     vc.videoTitle = item.title;
+    [self.navigationController setNavigationBarHidden:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

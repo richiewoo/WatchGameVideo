@@ -7,7 +7,7 @@
 //
 
 #import "VPViewController.h"
-#import <WebKit/WebKit.h>
+#import <MediaPlayer/MPMoviePlayerController.h>
 
 @implementation VPViewController
 
@@ -15,6 +15,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationItem.title = self.videoTitle;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector: @selector(playbackDidFinish:) name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayer];
+}
+
+- (void)playbackDidFinish:(NSNotification*)aNotifacaiotn{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
